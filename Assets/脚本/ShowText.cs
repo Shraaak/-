@@ -8,7 +8,6 @@ public class ShowText : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI displayText;
     [SerializeField] private string[] sentences;
-
     private int currentIndex = 0;
 
     void Start()
@@ -17,11 +16,12 @@ public class ShowText : MonoBehaviour
         {
             displayText.text = sentences[0];
         }
+
     }
 
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             NextSentence();
         }

@@ -1,0 +1,8 @@
+# Unity 缓存和临时文件
+Library/
+Temp/
+Logs/
+# Unity 用户设置（可选，多人开发建议忽略）
+UserSettings/
+# 系统文件
+.DS_Store
