@@ -1,8 +1,75 @@
-# Unity 缓存和临时文件
-Library/
-Temp/
-Logs/
-# Unity 用户设置（可选，多人开发建议忽略）
-UserSettings/
-# 系统文件
+# =============== #
+# Unity Generated #
+# =============== #
+# 本地缓存、临时文件和自动生成的文件夹
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Uu]serSettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/[Ll]ogs/
+
+# ================== #
+# Build Artifacts #
+# ================== #
+# 最终打包输出的文件夹
+/[Bb]uild/
+/[Bb]uilds/
+
+# 最终打包输出的文件
+*.apk
+*.aab
+*.exe
+*.app
+*.ipa
+*.unitypackage
+
+# ================== #
+# IDE / System #
+# ================== #
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.suo
+*.user
+*.userprefs
+*.sln.DotSettings.user
+
+# VS Code
+.vscode/
+
+# 操作系统生成的文件
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ================== #
+# C# Project Files #
+# ================== #
+# 这些文件由 Unity 自动生成，用于 IDE (Visual Studio / Rider)。
+# 它们包含本地路径，在团队协作时很容易引起冲突。
+# 推荐忽略它们，让每个团队成员在本地自动生成。
+*.sln
+*.csproj
+*.unityproj
+
+# ================== #
+# Misc Files #
+# ================== #
+# 杂项文件和崩溃日志
+sysinfo.txt
+*.crash
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Asset Store 包的本地缓存
+/Assets/AssetStorePackages/
