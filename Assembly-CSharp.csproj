@@ -66,9 +66,11 @@
   <ItemGroup>
     <Compile Include="Assets/脚本/LakeRipple.cs" />
     <Compile Include="Assets/脚本/WindRippleController.cs" />
+    <Compile Include="Assets/脚本/CameraRotate.cs" />
     <Compile Include="Assets/脚本/PlayerControl.cs" />
     <Compile Include="Assets/脚本/ShowText.cs" />
     <Compile Include="Assets/脚本/SceneChange.cs" />
+    <Compile Include="Assets/New Actions.cs" />
     <Compile Include="Assets/脚本/WindInput.cs" />
     <Compile Include="Assets/脚本/RippleTriggerZone.cs" />
     <Compile Include="Assets/脚本/WindInteractable.cs" />
@@ -77,7 +79,7 @@
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
-    <None Include="Assets/zh-cn_副本.txt" />
+    <None Include="Assets/素材/zh-cn_副本.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
