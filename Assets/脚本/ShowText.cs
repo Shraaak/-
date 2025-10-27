@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ShowText : MonoBehaviour
@@ -34,6 +36,8 @@ public class ShowText : MonoBehaviour
         if (currentIndex >= sentences.Length)
         {
             displayText.text = "";
+            //改变场景
+            StartCoroutine(ChangePlayerScence());
         }
         else
         {
@@ -42,7 +46,7 @@ public class ShowText : MonoBehaviour
             
         }
     }
-    
+
     void TextEffect()
     {
         // 所有句子都先变为灰色
@@ -64,7 +68,7 @@ public class ShowText : MonoBehaviour
             Color flashColor = Color.Lerp(new Color(0.15f, 0.15f, 0.15f), new Color(0.4f, 0.4f, 0.4f), t);
             string flashHex = ColorUtility.ToHtmlStringRGB(flashColor);
 
- 
+
             string before = sentence.Substring(0, 1);
             string target = sentence.Substring(1, 1);
             string after = sentence.Substring(2);
@@ -81,5 +85,12 @@ public class ShowText : MonoBehaviour
         }
 
         displayText.text = fullText;
+    }
+
+    IEnumerator ChangePlayerScence()
+    {
+        yield return new WaitForSeconds(2f);
+        //等待两秒进行动画转场
+        SceneManager.LoadScene(2);
     }
 }
