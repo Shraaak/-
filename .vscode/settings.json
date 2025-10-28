@@ -51,5 +51,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "风之舞.sln"
+    "dotnet.defaultSolution": "风之舞.sln",
+    "dotnet.preferCSharpExtension": true
 }
