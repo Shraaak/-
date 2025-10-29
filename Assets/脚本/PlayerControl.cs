@@ -17,6 +17,7 @@ public class PlayerControl : MonoBehaviour
         Vector3 moveDir = cameraTransform.forward * _move.y + cameraTransform.right * _move.x;
         moveDir.y = 0f;
         transform.Translate(moveDir * speed * Time.deltaTime, Space.World);
-        transform.Translate(moveDir*speed*Time.deltaTime);
     }
+    
+    
 }
