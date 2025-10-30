@@ -9,15 +9,24 @@ public class PlayerControl : MonoBehaviour
     [Header("角色移动的速度")]
     [SerializeField] private float speed = 5;
     [SerializeField] Transform cameraTransform;
+    bool inputEnabled = true;
 
     void Update()
     {
-        Vector2 _move = moveActionToUse.action.ReadValue<Vector2>();
+        if (inputEnabled)
+        {
+            Vector2 _move = moveActionToUse.action.ReadValue<Vector2>();
 
-        Vector3 moveDir = cameraTransform.forward * _move.y + cameraTransform.right * _move.x;
-        moveDir.y = 0f;
-        transform.Translate(moveDir * speed * Time.deltaTime, Space.World);
+            Vector3 moveDir = cameraTransform.forward * _move.y + cameraTransform.right * _move.x;
+            moveDir.y = 0f;
+            transform.Translate(moveDir * speed * Time.deltaTime, Space.World);
+        }
+        
     }
-    
+
+    public void EnableInput(bool enable)
+    {
+        inputEnabled = enable;
+    }  
     
 }

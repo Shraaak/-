@@ -75,6 +75,7 @@
     <Compile Include="Assets/脚本/RippleTriggerZone.cs" />
     <Compile Include="Assets/脚本/Interact.cs" />
     <Compile Include="Assets/脚本/WindInteractable.cs" />
+    <Compile Include="Assets/脚本/InteractTestShowUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
